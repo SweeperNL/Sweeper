@@ -1,3 +1,63 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+body {
+ font-family: 'Segoe UI', sans-serif; background-color: #246910;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.btn-success {
+  background-color: #1A4731;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #155d3a;
+}
+
+/* Sweeper Navbar Styles */
+.sweeper-navbar {
+  background-color: #246910; /* Sweeper green */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* subtle shadow for elevation */
+  z-index: 1030; /* makes sure it stays on top */
+}
+
+/* Navbar brand (logo) */
+.sweeper-navbar .navbar-brand img {
+  height: 40px; /* adjust logo size */
+  width: auto;
+}
+
+/* Navigation links */
+.sweeper-navbar .nav-link,
+.sweeper-navbar .navbar-brand {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* Hover and active link states */
+.sweeper-navbar .nav-link:hover,
+.sweeper-navbar .navbar-brand:hover {
+  color: #f87f10; /* Sweeper orange */
+}
+
+.sweeper-navbar .nav-link.active {
+  color: #f87f10;
+  font-weight: 600;
+}
+
+/* Mobile toggler styles */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
