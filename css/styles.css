@@ -42,7 +42,7 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* HERO SECTION */
+
 /* HERO SECTION */
 .hero-section {
   width: 100%;
@@ -63,24 +63,26 @@ body {
 }
 
 .hero-text {
-  background-color: rgba(255, 255, 255, 0.95);
-  color: black;
+  background-color: #246910;
+  color: white;
   padding: 20px 24px;
   max-width: 500px;
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero-text h1 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
+  color: #F87F10; /* Sweeper orange */
 }
 
 .hero-text p {
-  margin: 0;
+  margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5;
 }
+
 
 /* MEDIA QUERY FOR MOBILE */
 @media (max-width: 768px) {
@@ -105,6 +107,92 @@ body {
   }
 
   .hero-text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* OUR MISSION SECTION */
+.mission-section {
+  max-width: 900px;
+}
+
+.mission-box {
+  background-color: #246910; /* Sweeper green */
+  border-radius: 16px;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.7;
+  padding: 2rem;
+  margin: auto;
+}
+
+.mission-box h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #F87F10; /* Sweeper orange */
+}
+
+@media (max-width: 768px) {
+  .mission-box {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .mission-box h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* BRAND VALUES SECTION */
+.brand-values-section {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.value-box {
+  background-color: #246910; /* Sweeper green */
+  color: white;
+  padding: 1.8rem;
+  border-radius: 16px;
+  position: relative;
+  min-height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.value-box h3 {
+  color: #F87F10; /* Sweeper orange */
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.value-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Small orange circle for icon placeholder */
+.icon-circle {
+  width: 36px;
+  height: 36px;
+  background-color: #F87F10;
+  border-radius: 50%;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .value-box {
+    padding: 1.5rem;
+  }
+
+  .value-box h3 {
+    font-size: 1.3rem;
+  }
+
+  .value-box p {
     font-size: 0.95rem;
   }
 }
