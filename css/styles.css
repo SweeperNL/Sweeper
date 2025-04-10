@@ -197,6 +197,101 @@ body {
   }
 }
 
+/* CTA SECTION */
+.cta-box {
+  background-color: #246910;
+  color: white;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cta-heading {
+  color: #F87F10; /* Sweeper orange */
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cta-subtext {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Orange button style */
+.btn-orange {
+  background-color: #F87F10;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #dd6f0f;
+  color: white;
+}
+
+/* Responsive font */
+@media (max-width: 768px) {
+  .cta-heading {
+    font-size: 1.5rem;
+  }
+
+  .cta-subtext {
+    font-size: 0.95rem;
+  }
+}
+
+/* TRAINING INTRO */
+.training-intro {
+  background-color: #246910;
+  color: white;
+  border-radius: 16px;
+}
+
+.training-intro h2 {
+  color: #F87F10;
+  font-weight: 700;
+}
+
+/* TRAINING CARDS */
+.training-card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.training-card-body h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.btn-orange {
+  background-color: #F87F10;
+  color: white;
+  padding: 0.5rem 1.3rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #dd6f0f;
+  color: white;
+}
+
 /* Footer */
 .sweeper-footer {
   background-color: #246910;
