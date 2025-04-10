@@ -298,6 +298,27 @@ body {
   color: white;
 }
 
+/* TEAM CARD STYLES */
+.team-card {
+  background-color: #246910;
+  border-radius: 16px;
+  color: white;
+  padding: 1rem;
+}
+
+.team-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #F87F10;
+}
+
+/* Contact Section Pills */
+.text-white a.footer-pill {
+  color: black;
+}
+
 /* Footer */
 .sweeper-footer {
   background-color: #246910;
