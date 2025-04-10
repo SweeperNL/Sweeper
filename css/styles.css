@@ -262,17 +262,23 @@ body {
 
 /* TRAINING CARDS */
 .training-card {
-  background-color: white;
+  background-color: #246910; /* Sweeper green */
   border-radius: 16px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   height: 100%;
+  color: white;
 }
 
 .training-card-body h3 {
   font-size: 1.2rem;
   font-weight: 700;
+  color: white; /* Sweeper orange */
+}
+
+.training-card-body p {
+  color: white;
 }
 
 .btn-orange {
