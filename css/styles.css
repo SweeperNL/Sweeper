@@ -1,29 +1,59 @@
 @charset "utf-8";
 /* Sweeper Styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   font-family: 'Segoe UI', sans-serif;
   color: black;
 }
 
-/* Pill Button Style for Navbar & Footer */
-.pill-link {
-  background-color: white;
-  color: black;
+/* Orange Buttons */
+.btn-orange {
+  background-color: #F87F10;
+  color: white;
+  padding: 0.6rem 1.4rem;
   border-radius: 50px;
-  padding: 6px 16px;
-  margin-left: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: none;
+}
+
+.btn-orange:hover,
+.btn-orange:active {
+  background-color: #dd6f0f;
+  color: white;
+}
+
+/* Navbar Pills */
+.pill-link {
+  background-color: #F87F10;
+  color: white;
+  border-radius: 20px;
+  padding: 6px 12px;
+  margin-left: 12px;
   text-decoration: none;
   font-weight: 500;
   display: inline-block;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  font-size: 0.95rem;
 }
 
-.pill-link:hover,
-.pill-link.active {
-  background-color: #F87F10; /* Sweeper orange */
+.pill-link:hover {
+  background-color: #dd6f0f;
   color: white;
+}
+
+.pill-link.active {
+  background-color: #F87F10;
+  color: white !important;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
 }
 
 /* Navbar */
@@ -34,6 +64,12 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.3);
 }
@@ -41,7 +77,6 @@ body {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-
 
 /* HERO SECTION */
 .hero-section {
@@ -53,7 +88,7 @@ body {
   position: relative;
   width: 100%;
   height: 80vh;
-  background-image: url("../images/pictures/hero.jpg"); /* your actual path */
+  background-image: url("../images/pictures/hero.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -66,39 +101,38 @@ body {
   background-color: #246910;
   color: white;
   padding: 20px 24px;
-  max-width: 500px;
+  max-width: 680px;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .hero-text h1 {
   font-size: 2rem;
-  margin-bottom: 10px;
-  color: #F87F10; /* Sweeper orange */
+  margin: 0;
+  color: #F87F10;
+  font-weight: 700;
 }
 
-.hero-text p {
-  margin-bottom: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-
-/* MEDIA QUERY FOR MOBILE */
 @media (max-width: 768px) {
   .hero-image {
     height: auto;
     aspect-ratio: 4 / 3;
     padding: 2rem 1rem;
-    display: flex;
-    align-items: flex-end; /* Push text to bottom */
-    justify-content: center; /* Center horizontally */
+    align-items: flex-end;
+    justify-content: center;
   }
 
   .hero-text {
     max-width: 100%;
     padding: 16px;
     border-radius: 8px;
+    flex-direction: column;
     text-align: center;
   }
 
@@ -106,8 +140,8 @@ body {
     font-size: 1.5rem;
   }
 
-  .hero-text p {
-    font-size: 0.95rem;
+  .hero-text a.btn-orange {
+    width: 100%;
   }
 }
 
@@ -117,7 +151,7 @@ body {
 }
 
 .mission-box {
-  background-color: #246910; /* Sweeper green */
+  background-color: #246910;
   border-radius: 16px;
   color: white;
   font-size: 1rem;
@@ -129,7 +163,7 @@ body {
 .mission-box h2 {
   font-weight: 700;
   font-size: 1.8rem;
-  color: #F87F10; /* Sweeper orange */
+  color: #F87F10;
 }
 
 @media (max-width: 768px) {
@@ -150,7 +184,7 @@ body {
 }
 
 .value-box {
-  background-color: #246910; /* Sweeper green */
+  background-color: #246910;
   color: white;
   padding: 1.8rem;
   border-radius: 16px;
@@ -160,7 +194,7 @@ body {
 }
 
 .value-box h3 {
-  color: #F87F10; /* Sweeper orange */
+  color: #F87F10;
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
   font-weight: 700;
@@ -171,7 +205,6 @@ body {
   line-height: 1.6;
 }
 
-/* Small orange circle for icon placeholder */
 .icon-circle {
   width: 36px;
   height: 36px;
@@ -182,7 +215,6 @@ body {
   right: 16px;
 }
 
-/* Responsive spacing */
 @media (max-width: 768px) {
   .value-box {
     padding: 1.5rem;
@@ -207,7 +239,7 @@ body {
 }
 
 .cta-heading {
-  color: #F87F10; /* Sweeper orange */
+  color: #F87F10;
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -219,25 +251,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Orange button style */
-.btn-orange {
-  background-color: #F87F10;
-  color: white;
-  padding: 0.6rem 1.4rem;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  display: inline-block;
-  border: none;
-}
-
-.btn-orange:hover {
-  background-color: #dd6f0f;
-  color: white;
-}
-
-/* Responsive font */
 @media (max-width: 768px) {
   .cta-heading {
     font-size: 1.5rem;
@@ -248,7 +261,7 @@ body {
   }
 }
 
-/* TRAINING INTRO */
+/* TRAINING SECTION */
 .training-intro {
   background-color: #246910;
   color: white;
@@ -260,9 +273,8 @@ body {
   font-weight: 700;
 }
 
-/* TRAINING CARDS */
 .training-card {
-  background-color: #246910; /* Sweeper green */
+  background-color: #246910;
   border-radius: 16px;
   overflow: hidden;
   display: flex;
@@ -274,27 +286,10 @@ body {
 .training-card-body h3 {
   font-size: 1.2rem;
   font-weight: 700;
-  color: white; /* Sweeper orange */
+  color: white;
 }
 
 .training-card-body p {
-  color: white;
-}
-
-.btn-orange {
-  background-color: #F87F10;
-  color: white;
-  padding: 0.5rem 1.3rem;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  display: inline-block;
-  border: none;
-}
-
-.btn-orange:hover {
-  background-color: #dd6f0f;
   color: white;
 }
 
@@ -319,11 +314,6 @@ body {
   border: 3px solid #F87F10;
 }
 
-/* Contact Section Pills */
-.text-white a.footer-pill {
-  color: black;
-}
-
 /* Footer */
 .sweeper-footer {
   background-color: #246910;
@@ -337,23 +327,23 @@ body {
 }
 
 .footer-pill {
-  background-color: white;
-  color: black;
-  border-radius: 50px;
-  padding: 6px 16px;
   margin-left: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-block;
-  transition: all 0.3s ease;
 }
 
-.footer-pill:hover {
-  background-color: #F87F10;
-  color: white;
+/* Form styling */
+.form-control {
+  border-radius: 50px;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
 }
 
-.sweeper-footer .copyright-text {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 0.9rem;
+.form-control:focus {
+  border: 2px solid #F87F10;
+  outline: none;
+  box-shadow: none;
+}
+
+.modal-title {
+  color: #F87F10;
 }
