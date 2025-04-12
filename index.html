@@ -39,9 +39,9 @@
   <div class="hero-image">
     <div class="container">
       <div class="hero-text d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-        <h1 class="mb-0 text-start flex-grow-1">We’re here for the teams without a coach.</h1>
-        <a href="#training-section" class="btn btn-orange">
-          <i class="bi bi-arrow-down-short" style="font-size: 1.25rem;"></i>
+        <h1 class="mb-0 text-start flex-grow-1">We’re here for the teams without a coach</h1>
+        <a href="#training-section" class="btn btn-orange btn-scroll">
+         <i class="bi bi-arrow-down-short" style="font-size: 1.25rem;"></i>
         </a>
       </div>
     </div>
@@ -50,7 +50,7 @@
 
 
 	<!-- Training Intro -->
-  <section class="container my-5">
+  <section id="training-section" class="container my-5">
     <div class="training-intro p-4 rounded-4 shadow-sm">
       <h2 class="text-orange mb-3">Training with Sweeper</h2>
       <p class="mb-0 text-white">
@@ -60,7 +60,7 @@
   </section>
 
   <!-- Training Cards -->
-  <section id="training-section" class="container my-5">
+  <section class="container my-5">
     <div class="row g-4">
       <!-- Beginner -->
       <div class="col-md-4">
@@ -197,16 +197,17 @@
   });
 
   // Only open modal if button is NOT inside the modal
-  document.querySelectorAll('.btn-orange').forEach(btn => {
-    btn.addEventListener('click', function (e) {
-      const isInsideModal = btn.closest('#authModal');
-      if (!isInsideModal) {
-        e.preventDefault();
-        const modal = new bootstrap.Modal(document.getElementById('authModal'));
-        modal.show();
-      }
-    });
+ document.querySelectorAll('.btn-orange:not(.btn-scroll)').forEach(btn => {
+  btn.addEventListener('click', function (e) {
+    const isInsideModal = btn.closest('#authModal');
+    if (!isInsideModal) {
+      e.preventDefault();
+      const modal = new bootstrap.Modal(document.getElementById('authModal'));
+      modal.show();
+    }
   });
+});
+
 
   // Do nothing on form submit (keeps modal open)
   document.getElementById("authForm").addEventListener("submit", function (e) {

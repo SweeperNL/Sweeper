@@ -101,7 +101,6 @@ body {
   background-color: #246910;
   color: white;
   padding: 20px 24px;
-  max-width: 680px;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -324,6 +323,7 @@ body {
 
 .footer-label {
   font-weight: 600;
+  color: white
 }
 
 .footer-pill {
