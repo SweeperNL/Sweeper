@@ -46,47 +46,67 @@
     </div>
   </section>
 
-  <!-- Brand Values Section with Icons -->
-  <section class="brand-values-section container my-5">
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="value-box position-relative">
-          <div class="icon-circle d-flex align-items-center justify-content-center">
-            <i class="bi bi-bar-chart-line text-white"></i>
+<!-- Brand Values Carousel Section -->
+<section class="container my-5 brand-values-carousel">
+  <div id="valuesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+
+      <!-- Item 1 -->
+      <div class="carousel-item active">
+        <div class="value-box position-relative text-center">
+          <div class="icon-circle-big d-flex align-items-center justify-content-center mx-auto mb-3">
+            <!-- Replace this with your own SVG icon -->
+            <i class="bi bi-bar-chart-line text-white fs-1"></i>
           </div>
           <h3>Improvement</h3>
           <p>Better every day. Small steps forward create stronger teams and lasting progress. Sweeper provides weekly training plans and blogs to keep you moving forward.</p>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="value-box position-relative">
-          <div class="icon-circle d-flex align-items-center justify-content-center">
-            <i class="bi bi-unlock text-white"></i>
+
+      <!-- Item 2 -->
+      <div class="carousel-item">
+        <div class="value-box position-relative text-center">
+          <div class="icon-circle-big d-flex align-items-center justify-content-center mx-auto mb-3">
+            <i class="bi bi-unlock text-white fs-1"></i>
           </div>
           <h3>Independency</h3>
           <p>Great teams don’t wait for a coach. With Sweeper, you become your own. Get schedules from certified coaches and train anytime.</p>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="value-box position-relative">
-          <div class="icon-circle d-flex align-items-center justify-content-center">
-            <i class="bi bi-compass text-white"></i>
+
+      <!-- Item 3 -->
+      <div class="carousel-item">
+        <div class="value-box position-relative text-center">
+          <div class="icon-circle-big d-flex align-items-center justify-content-center mx-auto mb-3">
+            <i class="bi bi-compass text-white fs-1"></i>
           </div>
           <h3>Guidance</h3>
           <p>Sweeper offers structure and support to teams without a coach, helping them improve together with a clear path forward.</p>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="value-box position-relative">
-          <div class="icon-circle d-flex align-items-center justify-content-center">
-            <i class="bi bi-person-badge text-white"></i>
+
+      <!-- Item 4 -->
+      <div class="carousel-item">
+        <div class="value-box position-relative text-center">
+          <div class="icon-circle-big d-flex align-items-center justify-content-center mx-auto mb-3">
+            <i class="bi bi-person-badge text-white fs-1"></i>
           </div>
           <h3>Leadership</h3>
           <p>We encourage players to step up, lead their team, and gain the confidence to grow — both on and off the pitch.</p>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Carousel indicators (dots only) -->
+    <div class="carousel-indicators mt-4">
+      <button type="button" data-bs-target="#valuesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#valuesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#valuesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#valuesCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+  </div>
+</section>
+
 
   <!-- Our Team Section -->
   <section class="container my-5">
