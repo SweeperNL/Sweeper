@@ -3,56 +3,185 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SweeperNL</title>
-  <!-- Bootstrap CSS & Icons -->
+  <title>Corporate | SweeperNL</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-</head>
+  <link href="css/styles.css" rel="stylesheet">
+  <style>
+    /* Prevent sidebar from overlapping navbar */
+    .sidebar-sticky {
+      top: 80px; /* adjust if navbar height changes */
+    }
 
+    .list-group-item.active {
+      background-color: #F87F10;
+      border-color: #F87F10;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 0 8px white;
+    }
+
+    .list-group-item:hover {
+      background-color: #F87F10;
+      color: white;
+    }
+  </style>
+</head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg sweeper-navbar sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="images/logos/sweeper-white.svg" alt="Sweeper Logo" height="40">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link pill-link" href="index.html">Home</a>
-          <a class="nav-link pill-link" href="aboutus.html">About us</a>
-          <a class="nav-link pill-link" href="contactus.html">Contact us</a>
-          <a class="nav-link pill-link active" href="corporate.html">Corporate</a>
-        </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sweeper-navbar sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logos/sweeper-white.svg" alt="Sweeper Logo" height="40">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link pill-link" href="index.html">Home</a>
+        <a class="nav-link pill-link" href="aboutus.html">About us</a>
+        <a class="nav-link pill-link" href="contactus.html">Contact us</a>
+        <a class="nav-link pill-link active" href="corporate.html">Corporate</a>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
-
-  <!-- Footer -->
-  <footer class="sweeper-footer mt-5">
-    <div class="container text-center">
-      <p class="mb-2">
-        <strong class="footer-label">Contact us:</strong>
-        <a href="mailto:hello@sweeper.nl" class="footer-pill pill-link">hello@sweeper.nl</a>
-      </p>
-      <p class="mb-2">
-        <strong class="footer-label">Follow us:</strong>
-        <a href="https://instagram.com/sweeper.nl" target="_blank" class="footer-pill pill-link">
-          <i class="bi bi-instagram"></i>
-        </a>
-      </p>
-      <p class="small copyright-text mb-0">
-        &copy; 2025 Sweeper. All rights reserved.
-      </p>
+<!-- Header -->
+<section class="hero-section">
+  <div class="hero-image" style="height: 60vh;">
+    <div class="hero-text w-100 d-flex justify-content-between align-items-center">
+      <h1 class="m-0">Corporate Information</h1>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<main class="container my-5">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-lg-3 mb-4">
+      <div class="list-group sidebar-sticky position-sticky">
+        <a href="#general" class="list-group-item list-group-item-action">General</a>
+        <a href="#content" class="list-group-item list-group-item-action">Content</a>
+        <a href="#production" class="list-group-item list-group-item-action">Production</a>
+        <a href="#production-design" class="list-group-item list-group-item-action ps-4">Design Elements</a>
+        <a href="#production-credits" class="list-group-item list-group-item-action ps-4">Credits</a>
+        <a href="#production-testing" class="list-group-item list-group-item-action ps-4">Testing Report</a>
+        <a href="#marketing" class="list-group-item list-group-item-action">Marketing</a>
+        <a href="#marketing-context" class="list-group-item list-group-item-action ps-4">Campaign Context</a>
+        <a href="#marketing-learning" class="list-group-item list-group-item-action ps-4">Learning Points</a>
+        <a href="#marketing-future" class="list-group-item list-group-item-action ps-4">Future Planning</a>
+        <a href="#marketing-professionalism" class="list-group-item list-group-item-action ps-4">Professionalism</a>
+        <a href="#management" class="list-group-item list-group-item-action">Management</a>
+        <a href="#management-lean" class="list-group-item list-group-item-action ps-4">Lean Canvas</a>
+        <a href="#management-validation" class="list-group-item list-group-item-action ps-4">Validation</a>
+        <a href="#appendix" class="list-group-item list-group-item-action">Appendix</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-lg-9">
+      <section id="general" class="mb-5">
+        <h2 class="text-orange">General Information</h2>
+        <p>Hosted at: <a href="#">https://yoursite.com</a></p>
+        <ul>
+          <li>David Donca – ID123456</li>
+          <li>Medina Sabotic – ID234567</li>
+        </ul>
+      </section>
+
+      <section id="content" class="mb-5">
+        <h2 class="text-orange">Content</h2>
+        <p>Which student contributed to which section:</p>
+        <table class="table table-bordered table-hover">
+          <thead class="table-light">
+            <tr><th>#</th><th>ID</th><th>Value</th><th>Link</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>123456</td><td>Improvement</td><td><a href="index.html">Home</a></td></tr>
+            <tr><td>2</td><td>234567</td><td>Leadership</td><td><a href="aboutus.html">About</a></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="production" class="mb-5">
+        <h2 class="text-orange">Production</h2>
+        <section id="production-design" class="mt-3">
+          <h4>Design Elements</h4>
+          <p>We used #F87F10 (orange) and #246910 (green) consistently across UI. The structure follows a clear grid with call-to-action sections, sticky navbar, and brand-aligned typography.</p>
+        </section>
+        <section id="production-credits" class="mt-4">
+          <h4>Credits</h4>
+          <ul>
+            <li>All photos taken in-house or from royalty-free sites (e.g. Unsplash)</li>
+            <li>Icons from Bootstrap Icons</li>
+          </ul>
+        </section>
+        <section id="production-testing" class="mt-4">
+          <h4>Testing Report</h4>
+          <p>We tested across mobile and desktop. Scroll behavior, layout consistency, and clarity of call-to-actions were validated by peers.</p>
+        </section>
+      </section>
+
+      <section id="marketing" class="mb-5">
+        <h2 class="text-orange">Marketing</h2>
+        <section id="marketing-context" class="mt-3">
+          <h4>Campaign Context</h4>
+          <p>Our launch campaign focused on Instagram posts and in-person pop-ups to grow the local community.</p>
+        </section>
+        <section id="marketing-learning" class="mt-3">
+          <h4>Learning Points</h4>
+          <p>We learned high-quality visuals and in-person activations are key for early adoption.</p>
+        </section>
+        <section id="marketing-future" class="mt-3">
+          <h4>Future Planning</h4>
+          <p>We plan to expand toward structured team onboarding and create TikTok content for reach.</p>
+        </section>
+        <section id="marketing-professionalism" class="mt-3">
+          <h4>Professionalism</h4>
+          <p>All content is on-brand, high-resolution, and follows our style guide.</p>
+        </section>
+      </section>
+
+      <section id="management" class="mb-5">
+        <h2 class="text-orange">Management</h2>
+        <section id="management-lean" class="mt-3">
+          <h4>Lean Canvas</h4>
+          <ul>
+            <li>Problem: Lack of coach-led training for social teams</li>
+            <li>Solution: Weekly pro-designed training plans</li>
+          </ul>
+        </section>
+        <section id="management-validation" class="mt-4">
+          <h4>Validation of Assumptions</h4>
+          <p>We surveyed 20+ student teams to confirm need for structured drills and self-led guidance.</p>
+        </section>
+      </section>
+
+      <section id="appendix" class="mb-5">
+        <h2 class="text-orange">Appendix</h2>
+        <p>References and links to supporting evidence:</p>
+        <ol>
+          <li><a href="#">Design Audit</a></li>
+          <li><a href="#">Testing Results</a></li>
+          <li><a href="#">Persona Interviews</a></li>
+        </ol>
+      </section>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="sweeper-footer mt-5">
+  <div class="container text-center">
+    <p><strong class="footer-label">Contact us:</strong> <a href="mailto:hello@sweeper.nl" class="footer-pill pill-link">hello@sweeper.nl</a></p>
+    <p><strong class="footer-label">Follow us:</strong> <a href="https://instagram.com/sweeper.nl" class="footer-pill pill-link"><i class="bi bi-instagram"></i></a></p>
+    <p class="small copyright-text">&copy; 2025 Sweeper. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

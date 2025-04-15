@@ -344,6 +344,18 @@ section:not(.hero-section) {
   border: 3px solid #F87F10;
 }
 
+/* Contact Form */
+.form-control::placeholder {
+  color: #bbb;
+  font-style: italic;
+}
+
+textarea.form-control:focus {
+  border: 2px solid #F87F10;
+  box-shadow: none;
+  outline: none;
+}
+
 /* Footer */
 .sweeper-footer {
   background-color: #246910;
