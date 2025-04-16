@@ -1,4 +1,9 @@
 @charset "utf-8";
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Poetsen+One&display=swap');
+@import url("https://use.typekit.net/dpr7rrc.css");
+
 /* Sweeper Styles */
 
 html {
@@ -16,6 +21,26 @@ p {
   margin-bottom: 1rem;
 }
 
+h1, h2, h3, h4, h5, h6,
+.hero-text h1,
+.mission-box h2,
+.cta-heading,
+.value-box h3,
+.team-name {
+  font-family: "manometer-sans", sans-serif;
+}
+
+
+.subheading {
+  font-family: 'Poetsen One', sans-serif;
+}
+
+body, p, .mission-box p, .value-box p, .training-card-body p {
+  font-family: "all-round-gothic", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Orange Buttons */
 .btn-orange {
   background-color: #F87F10;
@@ -23,7 +48,7 @@ p {
   padding: 0.6rem 1.4rem;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 200;
   transition: all 0.3s ease;
   display: inline-block;
   border: none;
@@ -43,7 +68,7 @@ p {
   padding: 6px 12px;
   margin-left: 12px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 200;
   display: inline-block;
   transition: all 0.3s ease, box-shadow 0.3s ease;
   border: none;
@@ -137,7 +162,7 @@ section:not(.hero-section) {
   font-size: 2rem;
   margin: 0;
   color: #F87F10;
-  font-weight: 700;
+  font-weight: normal;
 }
 
 @media (max-width: 768px) {
@@ -182,7 +207,7 @@ section:not(.hero-section) {
 }
 
 .mission-box h2 {
-  font-weight: 700;
+  font-weight: normal;
   font-size: 1.8rem;
   color: #F87F10;
 }
@@ -198,26 +223,27 @@ section:not(.hero-section) {
   }
 }
 
-/* Carousel for Brand Values */
+/* === Brand Values Carousel Section === */
 .brand-values-carousel {
   max-width: 900px;
   margin: 0 auto;
+  position: relative;
 }
 
 .brand-values-carousel .carousel-inner {
   background-color: #246910;
   border-radius: 16px;
-  padding: 2rem 2.5rem;
+  padding: 2.5rem 2rem 4rem; /* extra space for indicators */
   text-align: center;
   color: white;
   position: relative;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .brand-values-carousel h3 {
   color: #F87F10;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: normal;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -226,10 +252,10 @@ section:not(.hero-section) {
   font-size: 1.05rem;
   line-height: 1.6;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 640px;
 }
 
-/* Big Icon Circle */
+/* Large Icon Circle */
 .value-icon-circle {
   width: 100px;
   height: 100px;
@@ -243,13 +269,17 @@ section:not(.hero-section) {
 
 .value-icon-circle svg,
 .value-icon-circle i {
-  font-size: 2rem;
+  font-size: 2.25rem;
   color: white;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
 }
 
-/* Carousel Indicators */
+/* Carousel Indicators (dots) */
+.carousel-indicators {
+  bottom: 0.8rem;
+}
+
 .carousel-indicators [data-bs-target] {
   background-color: #F87F10;
   width: 10px;
@@ -264,10 +294,17 @@ section:not(.hero-section) {
   opacity: 1;
 }
 
-/* Hide arrows */
+/* Carousel Arrows */
 .brand-values-carousel .carousel-control-prev,
 .brand-values-carousel .carousel-control-next {
-  display: none;
+  width: 8%;
+}
+
+.brand-values-carousel .carousel-control-prev-icon,
+.brand-values-carousel .carousel-control-next-icon {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 
@@ -283,7 +320,7 @@ section:not(.hero-section) {
 .cta-heading {
   color: #F87F10;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: normal;
   margin-bottom: 0.5rem;
 }
 
@@ -312,7 +349,7 @@ section:not(.hero-section) {
 
 .training-intro h2 {
   color: #F87F10;
-  font-weight: 700;
+  font-weight: normal;
 }
 
 .training-card {
@@ -336,7 +373,7 @@ section:not(.hero-section) {
 
 .training-card-body h3 {
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: normal;
   color: white;
 }
 
@@ -354,7 +391,7 @@ section:not(.hero-section) {
 
 .team-name {
   color: #F87F10;
-  font-weight: 700;
+  font-weight: normal;
 }
 
 .team-photo {
@@ -386,7 +423,7 @@ textarea.form-control:focus {
 }
 
 .footer-label {
-  font-weight: 600;
+  font-weight: 200;
   color: white
 }
 
@@ -411,3 +448,27 @@ textarea.form-control:focus {
 .modal-title {
   color: #F87F10;
 }
+
+@media (min-width: 768px) {
+  .row.equal-height > .col-md-6 {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .row.equal-height > .col-md-6 > * {
+    width: 100%;
+  }
+
+  .mission-box,
+  .img-container {
+    height: 100%;
+  }
+
+  .img-container img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+}
+
+
