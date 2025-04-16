@@ -48,7 +48,7 @@ body, p, .mission-box p, .value-box p, .training-card-body p {
   padding: 0.6rem 1.4rem;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 200;
+  font-weight: 400;
   transition: all 0.3s ease;
   display: inline-block;
   border: none;
@@ -68,7 +68,7 @@ body, p, .mission-box p, .value-box p, .training-card-body p {
   padding: 6px 12px;
   margin-left: 12px;
   text-decoration: none;
-  font-weight: 200;
+  font-weight: 400;
   display: inline-block;
   transition: all 0.3s ease, box-shadow 0.3s ease;
   border: none;
@@ -112,6 +112,15 @@ body, p, .mission-box p, .value-box p, .training-card-body p {
 section:not(.hero-section) {
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+/* Fix mobile navbar spacing */
+@media (max-width: 991.98px) {
+  .navbar-nav .pill-link {
+    margin: 8px 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* HERO SECTION */
@@ -423,7 +432,7 @@ textarea.form-control:focus {
 }
 
 .footer-label {
-  font-weight: 200;
+  font-weight: 400;
   color: white
 }
 
