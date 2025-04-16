@@ -480,4 +480,53 @@ textarea.form-control:focus {
   }
 }
 
+/* Beginner Training Box */
+.training-details-box {
+  background-color: #246910;
+  color: white;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.training-details-box h2.training-title {
+  color: #F87F10;
+  font-weight: normal;
+}
+
+/* Sticky Back Button */
+.sticky-back-wrapper {
+  position: sticky;
+  top: 80px; /* adjust based on navbar height */
+  z-index: 1030;
+  margin-bottom: 1rem;
+}
+
+.training-back-btn {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .training-back-btn {
+    top: 0.5rem !important;
+    left: 0.75rem !important;
+    z-index: 1050 !important;
+  }
+
+  .training-details-box button.btn-orange {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+  }
+}
+
+.drill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.drill-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
