@@ -551,4 +551,11 @@ textarea.form-control:focus {
   color: #F87F10 !important;
 }
 
+section:target::before {
+  content: "";
+  display: block;
+  height: 80px; /* height of your navbar */
+  margin-top: -80px;
+}
+
 
